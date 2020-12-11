@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxApi/homepage.dart';
+import 'package:getxApi/views/homepage.dart';
 
 void main() {
   runApp(MyApp());
