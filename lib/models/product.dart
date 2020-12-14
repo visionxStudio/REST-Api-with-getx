@@ -1,3 +1,6 @@
+// This is the model that we got from the https://app.quicktype.io/
+// Just copy and paste all the code and the work is almost done
+
 import 'dart:convert';
 
 List<Product> productFromJson(String str) =>
