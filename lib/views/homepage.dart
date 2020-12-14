@@ -5,7 +5,8 @@ import 'package:getxApi/controllers/productController.dart';
 import 'package:getxApi/views/product_tile.dart';
 
 class Homepage extends StatelessWidget {
-  final ProductController productController = Get.put(ProductController());
+  final ProductController productController =
+      Get.put(ProductController()); // Dependency Management
   @override
   Widget build(BuildContext context) {
     return Scaffold(
