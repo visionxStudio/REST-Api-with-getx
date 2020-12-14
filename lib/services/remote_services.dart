@@ -26,4 +26,10 @@ class RemoteServices {
       return null;
     }
   }
+
+  void fetchProduct() async {
+    var response = await client.get(
+        "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
+    print(response);
+  }
 }

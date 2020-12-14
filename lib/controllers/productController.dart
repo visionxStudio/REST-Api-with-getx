@@ -23,7 +23,7 @@ class ProductController extends GetxController {
       var products = await RemoteServices.fetchProducts();
 
       if (products != null) {
-        // productList.value = products;
+        // productList.value = products; This method is depreciated
         productList.assignAll(products);
       }
     } finally {
