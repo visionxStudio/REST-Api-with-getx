@@ -27,15 +27,19 @@ class RemoteServices {
     }
   }
 
-  static void fetchProduct() async {
-    var response = await client.get(
-        "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
-    // print(response.body);
-    // Now we get the json as a response from the api
-    // Now we need to parse the json to our Product model
-    if (response.statusCode == 200) {
-    } else {
-      Get.snackbar("Error", "Error Retreving the data from the internet");
-    }
-  }
+  // static Future<List<Product>> fetchProduct() async {
+  //   var response = await client.get(
+  //       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline");
+
+  //   // print(response.body);
+  //   // Now we get the json as a response from the api
+  //   // Now we need to parse the json to our Product model
+
+  //   if (response.statusCode == 200) {
+  //     return productFromJson(response.body);
+  //   } else {
+  //     Get.snackbar("Error", "Error Retreving the data from the internet");
+  //   }
+  //   return null;
+  // }
 }
