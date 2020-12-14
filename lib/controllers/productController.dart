@@ -17,18 +17,32 @@ class ProductController extends GetxController {
     super.onInit();
   }
 
+  // void fetchProducts() async {
+  //   isLoading(true);
+  //   try {
+  //     var products = await RemoteServices.fetchProducts();
+
+  //     if (products != null) {
+  //       // productList.value = products; This method is depreciated
+  //       productList.assignAll(products);
+  //     }
+  //   } finally {
+  //     isLoading(false);
+  //   }
+  // }
+
   void fetchProducts() async {
     isLoading(true);
-    try {
-      var products = await RemoteServices.fetchProducts();
+    // try {
+    var products = await RemoteServices.fetchProduct();
 
-      if (products != null) {
-        // productList.value = products; This method is depreciated
-        productList.assignAll(products);
-      }
-    } finally {
-      isLoading(false);
-    }
+    //   if (products != null) {
+    //     // productList.value = products; This method is depreciated
+    //     productList.assignAll(products);
+    //   }
+    // } finally {
+    //   isLoading(false);
+    // }
   }
 }
 
