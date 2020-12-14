@@ -7,6 +7,9 @@ import 'package:getxApi/views/product_tile.dart';
 class Homepage extends StatelessWidget {
   final ProductController productController =
       Get.put(ProductController()); // Dependency Management
+
+  // Now we can call the method in productController like productController.fetchApi()
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
